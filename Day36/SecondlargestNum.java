@@ -8,8 +8,8 @@ public class SecondlargestNum {
      1.Sort the Array using Bubble sort technique
      2.And find the second largest element by using index-1
      */
-    
-   int n = nums.length; 
+
+   int n = nums.length;
     for(int i=0;i<n-2;i++){
         for(int j=0;j<n-1-i;j++){
             if(nums[j]>nums[j+1]){
@@ -21,7 +21,7 @@ public class SecondlargestNum {
     }
     int result = nums[n-2];
     return result;
-}  
+}
 public static void main(String[] args) {
   Scanner scan = new Scanner(System.in);
 
@@ -30,10 +30,11 @@ public static void main(String[] args) {
 
   int[] collectionOfNum = new int[50];
   for(int i=0;i<size;i++){
-
+     collectionOfNum[i] = scan.nextInt();
   }
-  int result = secondLargest(nums);
+  int result = secondLargest(collectionOfNum);
   System.out.println(result);
+  scan.close();
 }
 
 }

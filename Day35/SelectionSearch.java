@@ -1,3 +1,4 @@
+package Day35;
 import java.util.Scanner;
 
 public class SelectionSearch {
@@ -7,7 +8,7 @@ public class SelectionSearch {
 			int minval = arr[i];
 			int minidx = i;
 			for(int j=i+1;j<arr.length;j++) {
-				
+
 				if(arr[j]<minval) {
 					arr[j] = minval;
 					minidx = j;
@@ -31,6 +32,7 @@ public class SelectionSearch {
             arr[i]=scan.nextInt();
         }
 		obj.selection(arr);
+		scan.close();
 	}
 }
 

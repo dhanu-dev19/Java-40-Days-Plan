@@ -1,11 +1,11 @@
 package Algo365;
-import java.util.*;
+//import java.util.*;
 public class Functions1 {
-  
+
   public static void main(String[] args) {
 
-    Scanner scan = new Scanner(System.in);
-    System.out.println("Enter the Grade(1-12) And Subject To get the topper");
+  //Scanner scan = new Scanner(System.in);
+   System.out.println("Enter the Grade(1-12) And Subject To get the topper");
    var studentName = getTopperNameForSubject(12, "Science");
    System.out.println(studentName);
    printStudentDetails(1);
@@ -19,12 +19,13 @@ public class Functions1 {
     String name = "Chandana";
     int age = 19;
     int grade = 12;
-    double CGPA = 9.2;
+    double CGPA = 9.5;
     boolean isRegularToSchool = true;
     System.out.println(name);
     System.out.println(age);
     System.out.println(grade);
     System.out.println(CGPA);
     System.out.println(isRegularToSchool);
+
   }
 }

@@ -1,21 +1,31 @@
 package Day1;
 
 public class Arrays2 {
-  public static void main(String[] args) {
-    int[][][] Arrays = new int[3][4][5];
-     int i,j,k;
-    for(i=0;i<3;i++){
-      for(j=0;j<4;j++){
-        for(k=0;k<5;k++){
-          Arrays[i][j][k]=i*j*k;
+  public static void main(String[] args) 
+  {
+    int[][][] Arrays = new int[3][4][5]; //Multi Dimenstional Array Declaration
+     int index,secondIndex,thirdIndex;
+
+     //Initializing the Array
+    for(index = 0;index < 3;index++)
+    {
+      for(secondIndex = 0;secondIndex < 4;secondIndex++)
+      {
+        for(thirdIndex = 0;thirdIndex < 5;thirdIndex++)
+        {
+          Arrays[index][secondIndex][thirdIndex] = index * secondIndex * thirdIndex; //Output: index = 0,1,2 secondIndex = 0,1,2,3 thirdIndex = 0,1,2,3,4
         }
       }
     }
     
-    for(i=0;i<3;i++){
-      for(j=0;j<4;j++){
-        for(k=0;k<5;k++){
-          System.out.print(Arrays[i][j][k]+" ");
+    //Printing the Array
+     for(index = 0; index < 3; index++)
+     {
+      for(secondIndex = 0; secondIndex < 4; secondIndex++)
+      {
+        for(thirdIndex = 0; thirdIndex < 5; thirdIndex++)
+        {
+          System.out.print(Arrays[index][secondIndex][thirdIndex]+" ");
         }
           System.out.println();
         }

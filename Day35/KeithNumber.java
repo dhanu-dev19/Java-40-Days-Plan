@@ -1,8 +1,10 @@
+package Day35;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 public class KeithNumber {
        static boolean keith(int x) {
-    	   
+
     	   ArrayList<Integer>terms = new ArrayList<Integer>();
     	   int temp = x,n=0;
            while(temp>0){
@@ -24,9 +26,15 @@ public class KeithNumber {
 		   return(next_term==x);
        }
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the number:");
 		int num = scan.nextInt();
+		if(keith(num)){
+			System.out.println("Yes ! it is keith number");
+		}
+		else{
+			System.out.println("NO! It is not");
+		}
+		scan.close();
 	}
 }

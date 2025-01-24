@@ -19,6 +19,7 @@ public class FileDemo {
         Print(f1.exists()?"true":"False");
         Print(f1.canWrite()? "Writable":"is not Writable");
         Print(f1.canRead()? "Readable":"is not readable");
+        Print("File Size:"+f1.length());
 
     }
 }

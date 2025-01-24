@@ -1,7 +1,4 @@
 package Day34;
-
-import java.util.AbstractCollection;
-import java.util.AbstractList;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -14,7 +11,7 @@ public class ArrayListToArray {
 
 
   public static void main(String[] args) {
-    
+
     ArrayList<Integer> a1 = new ArrayList<>();
     a1.add(3);
     a1.add(2);
@@ -45,10 +42,10 @@ public class ArrayListToArray {
      l1.addLast("Mongo");
 
      l1.add(1,"gava");
-     
+
      System.out.println(l1);
 
-    System.out.println( 
+    System.out.println(
      l1.remove("Mongo")+" "+
      l1.remove()+" "+
      l1.remove(3)+" "+
@@ -56,7 +53,7 @@ public class ArrayListToArray {
      l1.removeLastOccurrence("Orange")
      );
      System.out.println(l1);
-    
+
      System.out.println("-------------------------------HashSet---------------------------------------------");
      HashSet<String> hs = new HashSet<>();
      hs.add("Alpha");
@@ -78,14 +75,14 @@ public class ArrayListToArray {
 
      System.out.println("------------------TreeSet Class---------------------");
      TreeSet<String> ts = new TreeSet<>();
-     
+
      ts.add("Darshan");
      ts.add("Deemanth");
      ts.add("Kushal");
      ts.add("Likith");
      ts.add("Akash");
      ts.add("Kushal");     /*Dont allow Duplicates and it must be unique with Sorted Ordered Tree set */
-     System.out.println(ts);  
+     System.out.println(ts);
      System.out.println(ts.contains("Likith"));
      System.out.println(ts.getFirst());
      System.out.println(ts.getClass());

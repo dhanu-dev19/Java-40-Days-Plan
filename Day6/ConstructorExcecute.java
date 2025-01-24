@@ -4,7 +4,7 @@ class A4{
   {
     System.out.println("Inside A Constructor");
   }
-  
+
 }
 class B2 extends A4{
   B2(){
@@ -19,6 +19,7 @@ class C2 extends B2{
 public class ConstructorExcecute {
   public static void main(String[] args) {
     C2 obj = new C2();
-    
+
+
   }
 }

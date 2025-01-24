@@ -11,7 +11,7 @@ public class VarLocalInference {
      var ch = 'c';
      System.out.println(ch);
      var decimal = 453.34D;
-     System.out.println(decimal); 
+     System.out.println(decimal);
 
      var num1 = 10;
      int num2 = 20;
@@ -33,17 +33,21 @@ public class VarLocalInference {
      //1.Only one variable can be declared and intialize
      //2.cannot be used null as initilizer.
      //3.we cannot array intial like this:var Array = {1,2,3};
-     
+
      //We can declare an array.
      var array = new int[10]; // valid
 
-     
+     for(int index = 0; index < array.length; index++)
+     {
+        array[index] = index+1;
+        System.out.print(array[index]+" ");
+     }
 
      //var[] array = new int[10]; Invalid
      //var array[] = new int[10]; invalid
 
 
 
-      
+
   }
 }
