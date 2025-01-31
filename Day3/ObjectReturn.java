@@ -2,28 +2,27 @@ package Day3;
 
 class ObjectDemo
 {
-  int a;
+  int number;
    
   ObjectDemo(int i)
   {
-    a = i;
+    number = i;
   }
               
   //ReturnType:Object type of ObjectDemo
   ObjectDemo incrementTen()
   {
-    ObjectDemo temp = new ObjectDemo(a+10);
-    return temp;
+    ObjectDemo temp = new ObjectDemo(number + 10);
+    return temp;  //Return type is Object type
   }
 }
 public class ObjectReturn {
-  
-  public static void main(String[] args) {
+    public static void main(String[] args) {
     ObjectDemo myDemo = new ObjectDemo(10);
     ObjectDemo myDemo2;
-    System.out.println("Fisrt "+myDemo.a);
+    System.out.println("Fisrt "+myDemo.number);
     myDemo2 = myDemo.incrementTen();
-    System.out.println("Fisrt "+myDemo.a);
-    System.out.println("second "+myDemo2.a);
+    System.out.println("Fisrt "+myDemo.number);
+    System.out.println("second "+myDemo2.number);
   }
 }

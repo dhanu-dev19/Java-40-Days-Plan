@@ -1,48 +1,53 @@
 package Day3;
 
-class ObejctDemo{
+class ObejctDemo
+{
   double width;
   double height;
   double depth;
 
-  public ObejctDemo(ObejctDemo ob)
+  public ObejctDemo(ObejctDemo ob) //Copy constructor
   {
     width = ob.width;
     height = ob.height;
     depth = ob.depth;
    }
-public ObejctDemo(double w,double h, double d){
+public ObejctDemo(double w,double h, double d)//Constructor Overloading
+{
      width = w;
      height = h;
      depth = d;
 }
 
-public ObejctDemo()
-  {
+public ObejctDemo()//Default Constructor
+{
     width = -1;
     height = -1;
     depth = -1;
 }
 
-public ObejctDemo(double len)
+public ObejctDemo(double len)//Constructor Overloading
 {
   height = width  = depth = len;
 }
 
-double volume(){
-  return height*width*depth;
+double volume()
+{
+  return height * width * depth;
 }
 
 }
 
-public class ObjectAsparameter2 {
-  public static void main(String[] args) {
+public class ObjectAsparameter2 
+{
+  public static void main(String[] args) 
+  {
     ObejctDemo mybox4 = new ObejctDemo(34);
     ObejctDemo mybox5 = new ObejctDemo(54,67,75);
     ObejctDemo mybox6 = new ObejctDemo();
     ObejctDemo myclone = new ObejctDemo(mybox4);
 
-    double vol;
+  double vol;
   vol = mybox4.volume();
   System.out.println("Volume is:"+vol);
 

@@ -2,7 +2,8 @@ package Day1;
 
 public class Datatypes {
 
-public static void main(String[] args) {
+public static void main(String[] args) 
+{
   //Determine the Size of each Data type using Java Wrapper Class.
 
   System.out.println("Size of Min: "+(Byte.MIN_VALUE)+"\t Size of Max: "+(Byte.MAX_VALUE));
@@ -28,6 +29,7 @@ int number1 = 0b1010;//valid
 
 //Note:UnderScore Not use at beginning and end and it can one or more underscore
 int number3 = 123__345__456;
+
 System.out.println(number1);
 System.out.println(number3);
 

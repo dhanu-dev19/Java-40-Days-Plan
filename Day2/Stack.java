@@ -6,20 +6,27 @@ class StackDemo{
   int Size = 10;
   int top;
 
-  public StackDemo(){
+  public StackDemo()
+  {
     top = -1;
   }
-  void push(int item){
-    if(top==Size-1){
+
+  void push(int item)
+  {
+    if(top==Size-1)
+    {
       System.out.println("Stack overflow");
     }
-    else{
+    else
+    {
       stack[++top] = item;
     }
   }
-  int pop(){
+  int pop()
+  {
 
-    if(top==-1){
+    if(top==-1)
+    {
       System.out.println("Stack underflow");
       return 0;
     }
@@ -30,28 +37,34 @@ class StackDemo{
 
 }
 
-public class Stack {
-  public static void main(String[] args) {
+public class Stack 
+{
+  public static void main(String[] args) 
+  {
     
   StackDemo stack1 = new StackDemo();
   StackDemo stack2 = new StackDemo();
-   int i;
+   int index;
 
   //Push the elements
-  for(i=0;i<10;i++){
-    stack1.push(i);
+  for(index = 0; index < 10; index++)
+  {
+    stack1.push(index);
   }
 
-  for(i=10;i<20;i++){
-    stack2.push(i);
+  for(index = 10; index < 20; index++)
+  {
+    stack2.push(index);
   }
   //Pop the elements:
   System.out.println("poped elements are:");
-  for(i=0;i<10;i++){
+  for(index = 0; index < 10; index++)
+  {
     System.out.println(stack1.pop());
   }
   System.out.println("poped elements are:");
-  for(i=0;i<10;i++){
+  for(index = 0; index < 10; index++)
+  {
   System.out.println(stack2.pop());    
   }
 

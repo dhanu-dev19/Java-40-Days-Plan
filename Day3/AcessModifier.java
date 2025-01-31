@@ -5,10 +5,12 @@ class AcessDemo{
   public int b;
   private int c;
 
-  void setc(int i){
+  void setc(int i)
+  {
     c = i;
   }
-  int getc(){
+  int getc()
+  {
     return c;
   }
 }

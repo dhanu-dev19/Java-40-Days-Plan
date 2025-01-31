@@ -10,7 +10,7 @@ class FactorialDemo
        return 1;
 
     else
-       result=factorialNum(number-1)*number;//Method calling or invoking itself called recusrsion.
+       result=factorialNum(number - 1) * number;//Method calling or invoking itself called recusrsion.
        return result;   
 
   }
@@ -23,6 +23,6 @@ public class Recursion {
     int result = 0;
 
      result = object.factorialNum(5);
-     System.out.println("Factorial of Number:"+result);
+     System.out.println("Factorial of Number:"+ result);
   }
 }

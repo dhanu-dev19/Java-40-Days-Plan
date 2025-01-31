@@ -7,12 +7,12 @@ public class ColorSearch {
 		String[] color={"red","blue","yellow","Safforn","green"};
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the element(Do yo have Search!):");
-		String element = "red";
+		String element = scan.next();
 		
-		for(int i=0;i<color.length;i++) {
+		for(int index = 0; index<color.length; index++) {
 		  
-			if(color[i]==element){
-				System.out.println("Element is found at "+i+" Position");
+			if(color[index].equals(element)){
+				System.out.println("Element is found at "+index+" Position");
 			}
 		}
 			scan.close();

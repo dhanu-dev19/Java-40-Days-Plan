@@ -1,9 +1,11 @@
 package Day4;
 
 public class CommandLine {
-  public static void main(String[] args) {
-    for(int i=0;i<args.length;i++){
-       System.out.println("Args["+i+"]:"+args[i]);
+  public static void main(String[] args) 
+  {
+    for(int index = 0; index < args.length; index++)
+    {
+       System.out.println("Args["+index+"]:"+args[index]);
     }
   }
 }

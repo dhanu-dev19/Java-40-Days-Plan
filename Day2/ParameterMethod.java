@@ -6,8 +6,9 @@ class ParameterMethod {
   double width;
   double depth;
 
-  double Volume1(){
-    return height*depth*width;
+  double Volume1()
+  {
+    return height * depth * width;
   }
   public void setDim(double w,double h,double d){
     width = w;

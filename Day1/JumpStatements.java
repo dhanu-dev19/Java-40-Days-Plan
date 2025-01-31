@@ -1,16 +1,18 @@
 package Day1;
-import java.util.*;
 public class JumpStatements {
   public static void main(String[] args) {
     
     //Continue statemnts with label  to describing  enclosed loop
-  outer: for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 10; j++) {
-               if(j > i){
+  outer: for (int firstIndex = 0; firstIndex < 10; firstIndex++) 
+  {
+            for (int secondIndex = 0; secondIndex < 10; secondIndex++) 
+            {
+               if(secondIndex > firstIndex)
+               {
                 System.out.println();
                 continue outer;
                }
-               System.out.print(" " + (i*j));
+               System.out.print(" " + (firstIndex * secondIndex));
             }
       System.out.println();
     }

@@ -12,15 +12,18 @@ public class DataType2
     Scanner scanner = new Scanner(System.in);
     System.out.println("Enter a number");
     long number1 = scanner.nextLong();
-    if(number1 >= -128 && number1 <= 127){
+    if(number1 >= -128 && number1 <= 127)
+    {
        byte number =(byte)number1;
        System.out.println("I am byte:"+number);
     }
-   else if(number1 >= -32768 && number1 <= 32767){
+   else if(number1 >= -32768 && number1 <= 32767)
+   {
       short number =(short) number1;
       System.out.println("I am Short:"+number);
    }
-  else if(number1 >= -2147483648 && number1 <= 2147483647){
+  else if(number1 >= -2147483648 && number1 <= 2147483647)
+  {
       int number = (int)number1;
       System.out.println("I am Int:"+number);
    }

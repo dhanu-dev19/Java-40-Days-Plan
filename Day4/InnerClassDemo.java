@@ -4,7 +4,7 @@ class Outer
 
 int Outer_x = 10;
 private int number = 50;//It can access private method
- void test(){
+ void test() {
   Inner inner = new Inner();
   inner.Sum();
  }
